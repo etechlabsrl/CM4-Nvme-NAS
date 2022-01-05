@@ -102,7 +102,7 @@ And here are some performance metrics, the fio job file is the same as previous 
 Pretty much overkill for a Gigabit ethernet NAS.
 
 ## Power
-One last final note is PCIe APSM, the PCIe power-saving feature. I did try to enable APSM manually, by default the power is about 10W with four NVMe (2x 970 EVO, 1x SN550, 1x SN520 config), with PCIe L1 state kicking in I can see the power goes down to about 8W, not a lot of power-saving and I a lot of troubles with the ZFS array working properly (IO timeout, etc...), so it might not be a good idea to enabling it.
+One last final note is PCIe APSM, the PCIe power-saving feature. I did try to enable APSM manually, by default the power is about 10W with four NVMe (2x 970 EVO, 1x SN550, 1x SN520 config), with PCIe L1 state kicking in I can see the power goes down to about 8W, not a lot of power-saving and I have a lot of troubles with the ZFS array working properly (IO timeout, etc...), so it might not be a good idea to enabling it.
 
 ## Final Notes & Thought
 This project is more of a research project to investigate the possibility of reverse engineering a simple PCIe switch board that no one has done before but nice to have for many projects in the future. And I'm glad that this project turns out working as expected and I also got an enclosure for my retired NVMe SSDs.
