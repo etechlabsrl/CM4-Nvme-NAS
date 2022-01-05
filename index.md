@@ -47,7 +47,7 @@ The board is simple, four M.2 KEY M sockets, and a CM4 with Gigabit ethernet and
 
 ![](https://i.imgur.com/vvIsRrN.jpg)
 
-The first board does work sometimes, but there is an issue that CM4 does not always get all the PCIe devices under the switch. Originally I thought it is a power sequence issue that M.2 might get the power later than CM4 started searching the PCIe bus, so I've designed an update that includes an RP2040 as power sequencer and PWM fan controller. But it turns out that it is because I swapped the reset input and output pins (RES_IN, RES_OUT) such that the CM4 is driving the reset buffer output and the M.2 connector's reset is attached to the input of that reset buffer. A quick board rework swap back the reset pins make the board much reliable. (The board files on this Gitbug have fixed this issue).
+The first board does work sometimes, but there is an issue that CM4 does not always get all the PCIe devices under the switch. Originally I thought it is a power sequence issue that M.2 might get the power later than CM4 started searching the PCIe bus, so I've designed an update that includes an RP2040 as power sequencer and PWM fan controller. But it turns out that it is because I swapped the reset input and output pins (RES_IN, RES_OUT) such that the CM4 is driving the reset buffer output and the M.2 connector's reset is attached to the input of that reset buffer. A quick board rework swap back the reset pins make the board much reliable. (The board files on this Github have fixed this issue).
 
 ![](https://i.imgur.com/bXeucA2.jpg)
 
