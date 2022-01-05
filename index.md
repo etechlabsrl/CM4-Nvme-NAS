@@ -21,8 +21,8 @@ The reasons to choose ASM1184e are simple:
 1. widely available cheap board
 2. QFN package for easy reverse engineering & rebuilding
 
-The board to reverse engineer is this one:
-
+The board to reverse engineering is this one:
+![](https://i.imgur.com/U5H43o6.jpg)
 
 A common technique is to put front and back of the board images on top of each other:
 ![](https://i.imgur.com/h6Fm1cs.jpg)
