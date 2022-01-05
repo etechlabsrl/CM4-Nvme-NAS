@@ -64,7 +64,7 @@ Here is what it looks like when I'm benchmarking the disk pool, and another side
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">2 Terabytes of NVMe ZFS array! <a href="https://t.co/fP9sYe3jGm">pic.twitter.com/fP9sYe3jGm</a></p>&mdash; will whang (@will_whang) <a href="https://twitter.com/will_whang/status/1471328847081607168?ref_src=twsrc%5Etfw">December 16, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-There is an interesting issue about CM4's PCIe Interrupt and what the NVMe driver is assuming. Raspberry Pi's interrupts are all processed by the first CPU CPU0, but the NVMe driver by default will create CPU_core_counts of interrupts, so four per NVMe SSD. (Related [forum](https://forums.raspberrypi.com/viewtopic.php?t=319938) discussion: )
+There is an interesting issue about CM4's PCIe Interrupt and what the NVMe driver is assuming. Raspberry Pi's interrupts are all processed by the first CPU CPU0, but the NVMe driver by default will create CPU_core_counts of interrupts, so four per NVMe SSD. (Related [forum](https://forums.raspberrypi.com/viewtopic.php?t=319938) discussion)
 
 I was interested in what is the performance penalty will be if I modify the kernel driver and only have one single queue. Furthermore, there is also a poll mode for the NVMe driver, so instead of using an interrupt to notify the job is done, the CPU will actively poll the result. 
 
