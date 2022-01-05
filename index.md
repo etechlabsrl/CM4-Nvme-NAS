@@ -60,7 +60,7 @@ So it turns out controlling power sequence is not necessary, but it is still nic
 
 So it is interesting to see what the performance looks like, I decided to put four 512G NVMe SSD (2x 970 EVO, 1x SN550, 1x SN520) and create a ZFS RAIDz disk pool.
 
-Here is what it looks like when I'm benchmarking the disk pool, and another side note here is that it turns out not every NVMe SSD uses the disk activity LED, during my testing, it looks like all the Sandisk and Samsung SSDs are using it, but not Intel Optane Memory and Toshiba SSDs. Not only do some of the NVMe drives might not use this LED, but also the frequency of the blinking might not be the same, Samsung's drive is about 1Hz and Sandisk's drive is about 2Hz
+Here is what it looks like when I'm benchmarking the disk pool, and another side note here is that it turns out not every NVMe SSD uses the disk activity LED, during my testing, it looks like all the Sandisk and Samsung SSDs are using it, but not Intel Optane Memory and Toshiba SSDs. Not only do some of the NVMe drives might not use this LED, but also the frequency of the blinking might not be the same, Samsung's drive is about 2Hz and Sandisk's drive is about 1Hz
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">2 Terabytes of NVMe ZFS array! <a href="https://t.co/fP9sYe3jGm">pic.twitter.com/fP9sYe3jGm</a></p>&mdash; will whang (@will_whang) <a href="https://twitter.com/will_whang/status/1471328847081607168?ref_src=twsrc%5Etfw">December 16, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
